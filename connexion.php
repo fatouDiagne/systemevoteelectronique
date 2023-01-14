@@ -29,7 +29,7 @@ $password = htmlspecialchars($_POST['password']);
          }else{ header('Location: index.php?login_err=password'); die(); }
      
  }else{ header('Location: index.php?login_err=not existe'); die(); }
-}else{ header('Location: index.php'); die();} // si le formulaire est envoyé sans aucune données
+} else{ header('Location: index.php'); die();} // si le formulaire est envoyé sans aucune données
 
 
 
