@@ -26,16 +26,16 @@ if (!empty($_POST['nni']) && !empty($_POST['password'])) // Si il existe les cha
             header('Location:../vote.php');
             die();
         } else {
-            header('Location:./authentification/auth.php?login_err=password');
+            header('Location:./auth.php?login_err=password');
             die();
         }
 
     } else {
-        header('Location:./authentification/auth.php?login_err=not existe');
+        header('Location:./auth.php?login_err=not existe');
         die();
     }
 } else {
-    header('Location:./authentification/auth.php');
+    header('Location:./auth.php');
     die();
 } // si le formulaire est envoyé sans aucune données
 
