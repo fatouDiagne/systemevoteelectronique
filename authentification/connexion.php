@@ -23,19 +23,19 @@ if (!empty($_POST['nni']) && !empty($_POST['password'])) // Si il existe les cha
 
             // On créer la session et on redirige sur vote.php
             $_SESSION['user'] = $data['usernni'];
-            header('Location: vote.php');
+            header('Location:../vote.php');
             die();
         } else {
-            header('Location: index.php?login_err=password');
+            header('Location:./authentification/auth.php?login_err=password');
             die();
         }
 
     } else {
-        header('Location: index.php?login_err=not existe');
+        header('Location:./authentification/auth.php?login_err=not existe');
         die();
     }
 } else {
-    header('Location: index.php');
+    header('Location:./authentification/auth.php');
     die();
 } // si le formulaire est envoyé sans aucune données
 

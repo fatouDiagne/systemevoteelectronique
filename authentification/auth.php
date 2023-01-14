@@ -40,7 +40,7 @@
                 <a href="#">Mot de passe oublié</a> 
                 <input type="submit" class='button' value='Confirmer'>
             </form>
-            <p><a href="inscription.php">Creer un compte</a></p>
+            <p><a href="/systemevoteelectronique/authentification/inscription.php">Creer un compte</a></p>
         </div>
     </div>
     
