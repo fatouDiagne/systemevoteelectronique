@@ -124,3 +124,8 @@ font-size: 2rem;
     text-decoration: none;
     color: #fff;
   }
+
+  .mon_im{
+    width: 100px;
+    height: 60px;
+  }

@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        require_once('auth.php')
+        require_once('./authentification/auth.php')
     ?>
 </body>
 </html>
