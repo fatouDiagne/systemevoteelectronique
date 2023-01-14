@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles/index.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="../styles/index.css" media="screen" type="text/css" />
 
 </head>
 <body>
@@ -34,7 +34,7 @@
         ?>
         <div class="content login">
             <h2>Authentification</h2>
-            <form action="connexion.php" method="POST">
+            <form action="./connexion.php" method="POST">
                 <input type="text" placeholder="Entrer votre NNI" name="nni" required>
                 <input type="password" placeholder="Entrer votre mot de passe" name="password" required><br>
                 <a href="#">Mot de passe oublié</a> 
