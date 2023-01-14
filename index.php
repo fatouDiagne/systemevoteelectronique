@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!--Ici tu met l'accueil -->
+
     <?php
         require_once('./authentification/auth.php')
     ?>

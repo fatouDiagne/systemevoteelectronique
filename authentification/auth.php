@@ -18,14 +18,14 @@
                 case 'password':
                     ?>
                     <div>
-                        <strong>Erreur</strong> mot de passe incorrect
+                        <strong class="erreur">Erreur mot de passe incorrect</strong>
                     </div>
                     <?php
                     break;
                 case 'not existe':
                     ?>
-                    <div class="alert alert-danger">
-                        <strong>Erreur</strong> compte non existant
+                    <div class="erreur">
+                        <strong>Erreur compte non existant</strong>
                     </div>
                     <?php
                     break;
@@ -34,13 +34,13 @@
         ?>
         <div class="content login">
             <h2>Authentification</h2>
-            <form action="./connexion.php" method="POST">
+            <form action="/systemevoteelectronique/authentification/connexion.php" method="POST">
                 <input type="text" placeholder="Entrer votre NNI" name="nni" required>
                 <input type="password" placeholder="Entrer votre mot de passe" name="password" required><br>
                 <a href="#">Mot de passe oublié</a> 
                 <input type="submit" class='button' value='Confirmer'>
             </form>
-            <p><a href="/systemevoteelectronique/authentification/inscription.php">Creer un compte</a></p>
+            <p><a href="/systemevoteelectronique/authentification/inscription.php">Créer un compte</a></p>
         </div>
     </div>
     

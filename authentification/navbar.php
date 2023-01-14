@@ -11,7 +11,7 @@
 <div class="entete">
             <ul>
                 <li><a href="/systemevoteelectronique/authentification/auth.php">Se connecter</a></li>
-                <li><a href="./inscription.php">Inscription</a></li>
+                <li><a href="/systemevoteelectronique/authentification/inscription.php">Inscription</a></li>
             </ul>
         
     </div>
