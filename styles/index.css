@@ -1,28 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #FEF7FF
+}
+
 .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
+   /* 
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-content: center;
+        max-width: 430px;
+        width: 100%;
+        background: #fff;
+        border-radius: 7px;
+        box-shadow: 0 5px 10px;
+
+    */
+
+}
+
+
+.content h2{
+font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.content input{
+   height: 30px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+}
+#check:checked ~ .content{
+    display: none;
+}
+#check{
+    display: none;;
+}
+.content input:focus{
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.content a{
+    font-size: 16px;
+    color: #845EC2;
+    text-decoration: none;
+}
+
+.content a:hover{
+    text-decoration: underline;
+}
+.container .content{
+    padding: 2rem;
+  }
+.content input.button{
+  color: #fff;
+  background: #845EC2;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.content input.button:hover{
+    background: #845EC2;
+}
+
+.container .register{
+    /*display: none;*/
+  }
+  /*#check:checked ~ .register{
+    display: block;
+  }*/
+
+  .entete{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: white;
-    margin-top: 100px;
-}
+    justify-content:flex-end;
+    height: 60px;
+    background-color: #845EC2;
+    color: #FEF7FF;
+  }
 
-.content{
+  .entete ul {
     display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    width: 350px;
-    height: 400px;
-}
-
-    .form-content input{
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-    margin-left: 40px;
-    }
-
-    b{
-    margin-left: 80px;
+    flex-direction: row;
+    list-style: none;
+  }
+  .entete ul li{
     margin-top: 10px;
-    }
-
-
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .entete ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
