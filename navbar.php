@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        require_once('auth.php')
-    ?>
+<div class="entete">
+            <ul>
+                <li><a href="./auth.php">Se connecter</a></li>
+                <li><a href="./inscription.php">Inscription</a></li>
+            </ul>
+        
+    </div>
 </body>
 </html>
