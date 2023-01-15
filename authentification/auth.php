@@ -9,7 +9,7 @@
     <?php
         require_once("navbar.php")
     ?>
-    <div class="contai login">
+    <div class="containerall login">
     <input type="checkbox" id="check">
         <?php
         if (isset($_GET['login_err'])) {

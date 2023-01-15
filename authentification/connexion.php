@@ -8,7 +8,6 @@ if (!empty($_POST['nni']) && !empty($_POST['password'])) // Si il existe les cha
     // Patch XSS
     $nni = htmlspecialchars($_POST['nni']);
     $password = htmlspecialchars($_POST['password']);
-
     // On regarde si l'utilisateur est inscrit dans la table user
     $check = $bdd->prepare('SELECT *FROM user WHERE usernni = ?');
     $check->execute(array($nni));

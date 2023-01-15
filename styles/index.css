@@ -13,7 +13,7 @@ body{
     background: #FEF7FF
 }
 
-.contai{
+.containerall{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -76,7 +76,7 @@ font-size: 2rem;
 .content a:hover{
     text-decoration: underline;
 }
-.contai .content{
+.containerall .content{
     padding: 2rem;
   }
 .content input.button{
@@ -94,25 +94,25 @@ font-size: 2rem;
     background: #845EC2;
 }
 
-.contai .register{
-    /*display: none;*/
+.containerall .register{
+    display: none;
   }
-  /*#check:checked ~ .register{
+  #check:checked ~ .register{
     display: block;
-  }*/
+  }
 
   .entete{
-    /*display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content:flex-end;*/
+    justify-content:flex-end;
     height: 60px;
     background-color: #845EC2;
     color: #FEF7FF;
   }
 
   .entete ul {
-    /*display: flex;
-    flex-direction: row;*/
+    display: flex;
+    flex-direction: row;
     list-style: none;
   }
   .entete ul li{
