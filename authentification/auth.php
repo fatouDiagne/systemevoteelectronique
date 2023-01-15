@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/index.css" media="screen" type="text/css" />
-
 </head>
 <body>
     <?php

@@ -57,12 +57,12 @@ font-size: 2rem;
    border-radius: 6px;
    outline: none;
 }
-#check:checked ~ .content{
+/*#check:checked ~ .content{
     display: none;
 }
 #check{
     display: none;;
-}
+}*/
 .content input:focus{
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
@@ -94,12 +94,12 @@ font-size: 2rem;
     background: #845EC2;
 }
 
-.containerall .register{
+/*.containerall .register{
     display: none;
   }
   #check:checked ~ .register{
     display: block;
-  }
+  }*/
 
   .entete{
     display: flex;
@@ -117,8 +117,8 @@ font-size: 2rem;
   }
   .entete ul li{
     margin-top: 10px;
-    margin-left: 1000px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
   }
   .entete ul li a {
     text-decoration: none;
@@ -137,7 +137,7 @@ font-size: 2rem;
   }
 
   .imvote{
-    width: 00px;
+    width: 200px;
     height: 200px;
     margin-top: 30px;
     margin-left: 400px;
