@@ -13,7 +13,7 @@ body{
     background: #FEF7FF
 }
 
-.container{
+.contai{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -76,7 +76,7 @@ font-size: 2rem;
 .content a:hover{
     text-decoration: underline;
 }
-.container .content{
+.contai .content{
     padding: 2rem;
   }
 .content input.button{
@@ -94,7 +94,7 @@ font-size: 2rem;
     background: #845EC2;
 }
 
-.container .register{
+.contai .register{
     /*display: none;*/
   }
   /*#check:checked ~ .register{
@@ -102,22 +102,22 @@ font-size: 2rem;
   }*/
 
   .entete{
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content:flex-end;*/
     height: 60px;
     background-color: #845EC2;
     color: #FEF7FF;
   }
 
   .entete ul {
-    display: flex;
-    flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
     list-style: none;
   }
   .entete ul li{
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 1000px;
     margin-right: 20px;
   }
   .entete ul li a {
@@ -137,8 +137,8 @@ font-size: 2rem;
   }
 
   .imvote{
-    width: 400px;
-    height: 300px;
+    width: 00px;
+    height: 200px;
     margin-top: 30px;
     margin-left: 400px;
   }
