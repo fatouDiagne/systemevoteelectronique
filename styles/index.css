@@ -13,7 +13,7 @@ body{
     background: #FEF7FF
 }
 
-.container{
+.containerall{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,12 +57,12 @@ font-size: 2rem;
    border-radius: 6px;
    outline: none;
 }
-#check:checked ~ .content{
+/*#check:checked ~ .content{
     display: none;
 }
 #check{
     display: none;;
-}
+}*/
 .content input:focus{
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
@@ -76,7 +76,7 @@ font-size: 2rem;
 .content a:hover{
     text-decoration: underline;
 }
-.container .content{
+.containerall .content{
     padding: 2rem;
   }
 .content input.button{
@@ -94,10 +94,10 @@ font-size: 2rem;
     background: #845EC2;
 }
 
-.container .register{
-    /*display: none;*/
+/*.containerall .register{
+    display: none;
   }
-  /*#check:checked ~ .register{
+  #check:checked ~ .register{
     display: block;
   }*/
 
@@ -117,8 +117,8 @@ font-size: 2rem;
   }
   .entete ul li{
     margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
   }
   .entete ul li a {
     text-decoration: none;
@@ -134,4 +134,17 @@ font-size: 2rem;
   .erreur{
     margin-left: 70px;
     color: red;
+  }
+
+  .imvote{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 400px;
+  }
+
+  .imcand{
+    width: 200px;
+    height: 500px;
+    border-radius: 5px;
   }

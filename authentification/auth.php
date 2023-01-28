@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/index.css" media="screen" type="text/css" />
-
 </head>
 <body>
     <?php
         require_once("navbar.php")
     ?>
-    <div class="container login">
-    <input type="checkbox" id="check">
+    <div class="containerall login">
+    <!--input type="checkbox" id="check"-->
         <?php
         if (isset($_GET['login_err'])) {
             $err = htmlspecialchars($_GET['login_err']);

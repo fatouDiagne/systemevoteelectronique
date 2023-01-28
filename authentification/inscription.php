@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +10,8 @@
 <body>
 <?php
         require_once("navbar.php")
-    ?>
-    <div style="margin-top: 200px;" class="container">
+?>
+    <div style="margin-top: 200px;" class="containerall">
         
         <?php
         if (isset($_GET['reg_err'])) {
@@ -82,14 +81,9 @@
                         autocomplete="off">
               
               
-                    <label>Département</label>
+                    <label>email</label>
                     <input type="text" name="departement" placeholder="departement" required="required"
                         autocomplete="off">
-              
-              
-                    <label>Commune</label>
-                    <input type="text" name="commune" placeholder="commune" required="required" autocomplete="off">
-    
                     <input class="button" type="submit" value="Inscription">
               
             </form>

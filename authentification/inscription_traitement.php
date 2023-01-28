@@ -34,15 +34,14 @@ if (!empty($_POST['prenom']) && !empty($_POST['nom']) && !empty($_POST['nni']) &
 
 
                 // On insère dans la base de données
-                $insert = $bdd->prepare('INSERT INTO user (prenom, nom, usernni, password, departement, commune) VALUES(:prenom, :nom, :usernni, :password, :departement, :commune)');
+                $insert = $bdd->prepare('INSERT INTO user (prenom, nom, usernni, password, email) VALUES(:prenom, :nom, :usernni, :password, :email)');
                 $insert->execute(
                     array(
                         'prenom' => $prenom,
                         'nom' => $nom,
                         'usernni' => $nni,
                         'password' => $password,
-                        'departement' => $departement,
-                        'commune' => $commune
+                        'email' => $email
                     )
                 );
                 // On redirige avec le message de succès

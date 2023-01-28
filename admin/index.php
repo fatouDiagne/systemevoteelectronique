@@ -1,12 +1,7 @@
  <?php
  include('db/Connexiondb.php');
- 
- 
- 
  include('include/header.php');
- 
- include('include/navbar.php') ;
-
+ include('include/navbar.php');
  ?>
  <div id="content-wrapper" class="d-flex flex-column">
 
