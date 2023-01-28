@@ -81,14 +81,9 @@
                         autocomplete="off">
               
               
-                    <label>Département</label>
+                    <label>email</label>
                     <input type="text" name="departement" placeholder="departement" required="required"
                         autocomplete="off">
-              
-              
-                    <label>Commune</label>
-                    <input type="text" name="commune" placeholder="commune" required="required" autocomplete="off">
-    
                     <input class="button" type="submit" value="Inscription">
               
             </form>
