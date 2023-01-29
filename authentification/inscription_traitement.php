@@ -2,18 +2,17 @@
 require_once '../config.php'; // On inclu la connexion à la bdd
 
 // Si les variables existent et qu'elles ne sont pas vides
-if (!empty($_POST['prenom']) && !empty($_POST['nom']) && !empty($_POST['nni']) && !empty($_POST['password']) && !empty($_POST['password_retype']) && !empty($_POST['commune']) && !empty($_POST['departement'])) {
+if (!empty($_POST['prenom']) && !empty($_POST['nom']) && !empty($_POST['nni']) && !empty($_POST['password']) && !empty($_POST['password_retype']) && !empty($_POST['email'])) {
     // Patch XSS
     $prenom = htmlspecialchars($_POST['prenom']);
     $nom = htmlspecialchars($_POST['nom']);
     $nni = htmlspecialchars($_POST['nni']);
     $password = htmlspecialchars($_POST['password']);
     $password_retype = htmlspecialchars($_POST['password_retype']);
-    $departement = htmlspecialchars($_POST['departement']);
-    $commune = htmlspecialchars($_POST['commune']);
-
+    $email = htmlspecialchars($_POST['email']);
+   
     // On vérifie si l'utilisateur existe
-    $check = $bdd->prepare('SELECT *  FROM user WHERE usernni = ?');
+    $check = $bdd->prepare('SELECT *  FROM users WHERE usernni = ?');
     $check->execute(array($nni));
     $data = $check->fetch();
     $row = $check->rowCount();
@@ -31,17 +30,15 @@ if (!empty($_POST['prenom']) && !empty($_POST['nom']) && !empty($_POST['nni']) &
                 $cost = ['cost' => 12];
                 $password = password_hash($password, PASSWORD_BCRYPT, $cost);
 
-
-
                 // On insère dans la base de données
-                $insert = $bdd->prepare('INSERT INTO user (prenom, nom, usernni, password, email) VALUES(:prenom, :nom, :usernni, :password, :email)');
+                $insert = $bdd->prepare('INSERT INTO users (nom, prenom, email, usernni, password) VALUES(:nom, :prenom, :email, :usernni, :password)');
                 $insert->execute(
                     array(
-                        'prenom' => $prenom,
                         'nom' => $nom,
+                        'prenom' => $prenom,
+                        'email' => $email,
                         'usernni' => $nni,
                         'password' => $password,
-                        'email' => $email
                     )
                 );
                 // On redirige avec le message de succès

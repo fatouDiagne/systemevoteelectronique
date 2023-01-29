@@ -54,7 +54,6 @@
             }
         }
         ?>
-
         <div class="register content">
             <form action="inscription_traitement.php" method="post">
                 <h2 class="text-center">Inscription</h2>
@@ -82,7 +81,7 @@
               
               
                     <label>email</label>
-                    <input type="text" name="departement" placeholder="departement" required="required"
+                    <input type="text" name="email" placeholder="email" required="required"
                         autocomplete="off">
                     <input class="button" type="submit" value="Inscription">
               
