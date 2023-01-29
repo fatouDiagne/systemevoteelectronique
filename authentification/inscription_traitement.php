@@ -37,7 +37,7 @@ if (!empty($_POST['prenom']) && !empty($_POST['nom']) && !empty($_POST['nni']) &
                         'nom' => $nom,
                         'prenom' => $prenom,
                         'email' => $email,
-                        'usernni' => $usernni,
+                        'usernni' => $nni,
                         'password' => $password,
                     )
                 );

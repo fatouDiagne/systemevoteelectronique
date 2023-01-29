@@ -1,3 +1,7 @@
+<?php
+        session_start();
+        require_once 'config.php'; 
+?>        
 <!Doctype html>
 <html>
 <head>
@@ -8,10 +12,9 @@
 </head>
 <body>
         <?php
-        session_start();
-        require_once 'config.php'; // On inclut la connexion à la bdd
+       // On inclut la connexion à la bdd
         if (isset($_SESSION['user'])) {
-                $check = $bdd->prepare("SELECT * FROM candidat ORDER BY id DESC");
+                $check = $bdd->prepare("SELECT * FROM candidats inner join users where candidats.userid=users.userid ");
                 $check->execute();
                 $result = $check->fetchAll();
                 //print_r($result);
@@ -24,25 +27,17 @@
 		<li><?php echo $row["prenom"];?></li>
 		<li><?php echo $row["nom"]; ?></li>
 		<li><?php echo $row["partie"];?></li>
-                <form method="POST">
-                        <input type="checkbox" name="vote">
-                </form>
+                <form method="POST" action="vote_traitement.php">
+                        <input type="radio" name="vote" value="cand1">
         </ul>
                         </div>
         <?php
-                        }
-                } 
+                        }?>
+                        <input type="submit" value="confirmer">
+                </form>
+               <?php } 
                
-       // if(!empty($_POST['vote'])){
-                $req = $bdd->prepare("SELECT * FROM electeur where usernni=".$_SESSION['user']);
-                //$req = $bdd->prepare("SELECT * FROM electeur");
-                $req->execute();
-                $resultall = $req->fetchAll();
-                        
-                
-                //print_r($resultall);
-        //}
-    
+       
         ?>
                 <!--form action="vote_traitement.php">
                         <div class="cand">
