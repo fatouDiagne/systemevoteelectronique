@@ -12,7 +12,6 @@
 </head>
 <body>
         <?php
-       // On inclut la connexion à la bdd
         if (isset($_SESSION['user'])) {
                 $check = $bdd->prepare("SELECT * FROM candidats inner join users where candidats.userid=users.userid ");
                 $check->execute();
@@ -27,11 +26,13 @@
 		<li><?php echo $row["prenom"];?></li>
 		<li><?php echo $row["nom"]; ?></li>
 		<li><?php echo $row["partie"];?></li>
-                <form method="POST" action="vote_traitement.php">
-                        <input type="radio" name="vote" value="cand1">
+                <form  action="vote_traitement.php"  method="POST">
+           
+                        <input  type="radio" name="vote" value="<?php echo $row["idcand"];?>">
+                     
         </ul>
                         </div>
-        <?php
+        <?php    
                         }?>
                         <input type="submit" value="confirmer">
                 </form>
