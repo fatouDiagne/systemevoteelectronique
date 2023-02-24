@@ -18,7 +18,7 @@
                      $insert->execute();
 
                        
-            echo "votre a bien etais accepte";
+            echo "<span>votre a bien etais accepte</span>";
 
             
             $insertt = $bdd->prepare("UPDATE electeurs, users SET electeurs.userid=users.userid, statusVote= 1 WHERE electeurs.usernni=".$_SESSION['user']);
@@ -27,11 +27,11 @@
           exit;
          
         }else{?>
-            echo "<span>Votre avis a deja ete donne, merci.</span></b>";
+            <span>Votre avis a deja ete donne, merci.</span></br>
             <?php exit;
         }
 }else{
-    echo"Erreur dans l'envoi du formulaire";
+    echo" <span>Erreur dans l'envoi du formulaire</span>";
 
 }
 
