@@ -18,7 +18,7 @@
                      $insert->execute();
 
                        
-            echo "<span>votre a bien etais accepte</span>";
+            echo "<span>votre vote a bien etais accepte</span>";
 
             
             $insertt = $bdd->prepare("UPDATE electeurs, users SET electeurs.userid=users.userid, statusVote= 1 WHERE electeurs.usernni=".$_SESSION['user']);
@@ -35,6 +35,6 @@
 
 }
 
-    //si statusVote =0 il n'a pas voté => on insère dans la table candidat
+ 
 
 ?>
